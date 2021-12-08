@@ -13,7 +13,7 @@ function App() {
   }
   function onSearch(ciudad) {
     //Llamado a la API del clima
-    axios(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_API}`)
+    axios(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${process.env.REACT_APP_API}`)
       .then((response) => {
         console.log(response)
         if(response.data.main !== undefined){
